@@ -1,0 +1,389 @@
+@charset "UTF-8";
+/* 共通 */
+body {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 100%;
+  line-height: 1.444;
+}
+img {
+  vertical-align: bottom;
+}
+a {
+  text-decoration: none;
+}
+a:hover{
+  opacity: .5;
+  transition: .3s;
+}
+h1,h2,h3,h4 {
+  font-weight: normal;
+}
+
+/* デスクトップ */
+
+/* トップ画像 */
+.header-logo img {
+  width: 138.57px;
+  height: 60px;
+}
+.top-image {
+  height: 92.5vh;
+  position: relative;
+  background-image: url(../images/main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+.top-image h2{
+  position: relative;
+  text-align: center;
+  line-height: 1;
+  font-size: 3rem;
+  top: calc(50% - 0.5rem);
+}
+.wrapper {
+  margin: auto;
+}
+
+/* header */
+header {
+  padding: 0 3%;
+}
+ul.header-menu-main {
+  list-style-type: none;
+  display: flex; /* メニューリストを横並びにする */
+  gap: 70px;
+}
+.header-menu-burger {
+  display: none;
+  line-height: 14px;
+}
+.header-menu-burger img {
+  height: 14px;
+}
+.header-menu-main li a{
+  color: inherit;
+  line-height: 60px;
+  font-size: 1.125rem;
+}
+header .wrapper {
+  max-width:1100px;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+.header-logo {
+  position: absolute;
+  top:30px;
+}
+.header-logo h1 {
+  font-size: 100%;
+}
+header-logo .link{
+  display: block;
+}
+.header-menu{
+  position: absolute;
+  top:30px;
+  right:0px;
+}
+
+/* お知らせ */
+.info {
+  padding: 90px 0;
+}
+.info .wrapper {
+  max-width:700px;
+}
+.info .primary-title{
+  font-size: 2.25rem;
+  text-align: center;
+  margin-bottom: 90px;
+}
+.info .list {
+  list-style-type: none;
+}
+
+.info .list li + li .link{
+  padding-top: 20px;
+}
+.info .list li .link{
+  color:inherit;
+  display: block;
+  border-bottom: 1px solid #000;
+  padding-bottom:19px;
+}
+.info .list .date {
+  font-size: 1.125rem;
+}
+.info .list .category {
+  font-size: 0.6875rem;
+  padding: 4px 7px;
+  margin: 0 31px;
+  border: 1px solid #6a808a;
+  text-align: center;
+  vertical-align: 4px;
+}
+.info .list .discription{
+  font-size: 1.125rem;
+}
+
+/* 施工事例 */
+.work {
+  padding: 90px 0;
+}
+.work .wrapper {
+  max-width: 980px;
+}
+.work .primary-title{
+  font-size: 2.25rem;
+  text-align: center;
+  margin-bottom: 90px;
+}
+.work .layout {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 80px;
+}
+.work .card {
+  max-width: 430px;
+  height: 440px;
+  margin: auto;
+}
+.card-photo img {
+  width: 100%;
+  height: 280px;
+}
+.card-photo {
+  margin-bottom: 30px;
+}
+.card-cap h4{
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.card-cap .address{
+  font-size: 0.75rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.card-cap .detail{
+  text-align: center;
+  width: 300px;
+  margin: auto;
+  height: 45px;
+  line-height: 21px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.card-cap .detail a{
+  display: block;
+  color:inherit;
+  font-size: 1rem;
+  padding: 12px 0;
+}
+.work .more  {
+  border: 1px solid #000;
+  text-align: center;
+  height: 54px;
+  line-height: 52px;
+  width: 200px;
+  margin: auto;
+}
+.work .more .link {
+  display: block;
+  font-size: 1.25rem;
+  color: inherit;
+}
+
+/* 蒼乃建設について */
+.about {
+  padding-top: 90px;
+}
+.about .layout {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.about .primary-title {
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-top: calc(100% - 1rem);
+  line-height: 1;
+}
+.about .tile {
+  background-size: cover;
+  background-position: center;
+}
+.about .company{
+  background-image: url(../images/company.png);
+}
+.about .recruit{
+  background-image: url(../images/recruit.png);
+}
+.about .contact{
+  background-image: url(../images/contact.png);
+}
+
+/* footer */
+footer {
+  background: #000;
+  padding: 30px 0 10px;
+}
+footer .wrapper {
+  max-width: 1100px;
+  padding-bottom: 60.12px;
+}
+footer .layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .logo a {
+  display: block;
+}
+footer .logo img{
+  width: 92.38px;
+  height: 38.88px;
+}
+footer .main-nav {
+  list-style-type: none;
+  display: flex;
+  gap: 60px;
+}
+footer .main-nav li a{
+  display: block;
+  color:#fff;
+  font-size: 1.125rem;
+}
+footer .end {
+  text-align: center;
+}
+footer .end small{
+  font-size: 0.75rem;
+  color: #fff;
+  display: block;
+  line-height: 17px;
+}
+
+
+
+
+/* スマホ版 */
+@media (max-width:960px){
+  /* スマホ版トップ画像 */
+  .top-image {
+    height: 42vh;
+  }
+  .top-image h2 {
+    font-size: 1.5rem;
+  }
+
+    /* スマホ版ヘッダー */
+    .header-logo img {
+      width: 60px;
+      height: 25.98px;
+    }
+    ul.header-menu-main {
+      display: none;
+    }
+    .header-menu-burger {
+      display: block;
+    }
+    .header-logo {
+      top:15px;
+    }
+    .header-menu {
+      top:21px;
+    }
+
+  /* スマホ版お知らせ */
+  .info {
+    padding: 50px 0;
+  }
+  .info .primary-title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  .info .wrapper {
+    padding: 0 20px;
+  }
+  .info .list li .link {
+    padding-bottom: 15px;
+  }
+  .info .list li + li .link {
+    padding-top:15px;
+  }
+  .info span.layout {
+    display: block;
+    padding-bottom: 15px;
+  }
+  .info .list .category {
+    margin: 0 0 0 15px;
+    vertical-align: baseline;
+  }
+  .info .list .date {
+    font-size: 0.8125rem;
+  }
+
+  /* スマホ版施工事例 */
+  .work {
+    padding: 50px 0;
+  }
+  .work .wrapper {
+    padding: 0 20px;
+  }
+  .work .primary-title{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  .work .layout {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .work .card {
+    max-width: 700px;
+    height: auto;
+  }
+  .work .card:first-child{
+    margin-bottom: 50px;
+  }
+  .card-photo img {
+    height: auto;
+  }
+  .card-cap h4 {
+    font-size: 1.25rem;
+}
+.card-cap .address {
+  font-size: 0.875rem;
+}
+
+  /* スマホ版蒼乃建設について */
+  .about {
+    padding-top: 60px;
+  }
+  .about .layout {
+    grid-template-columns: 100%;
+  }
+
+  /* スマホ版footer */
+  footer {
+    padding: 32px 0 15px;
+  }
+  footer .wrapper {
+    width: 108px;
+    padding-bottom: 20.12px;
+  }
+  footer .layout {
+    flex-direction: column-reverse;
+  }
+  footer .main-nav {
+    flex-direction: column;
+    text-align: center;
+    gap: 21px;
+    margin-bottom: 50px;
+  }
+}
